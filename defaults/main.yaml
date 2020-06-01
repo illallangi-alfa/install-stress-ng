@@ -1,0 +1,6 @@
+---
+install_stress_ng_packages:
+  debian: &debian
+    - "stress-ng"
+  debian_armv7l: *debian
+  debian_x86_64: *debian

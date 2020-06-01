@@ -1,0 +1,7 @@
+---
+- name: "Install stress-ng"
+  package:
+    pkg: "{{ install_stress_ng_packages[(ansible_os_family | lower) + '_' + (ansible_architecture | lower)] }}"
+    state: "present"
+  tags:
+    - "stress-ng"
